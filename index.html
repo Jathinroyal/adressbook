@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddressBook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AddressBook</div>
+        <div class="nav-buttons">
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="window.location.href='addContact.html'">Add Contact</button>
+            <button onclick="window.location.href='viewContact.html'">View Contact</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="welcome-text">
+            <h1>Welcome to AddressBook Application</h1>
+            <p>Manage contacts officially with our easy-to-use platform</p>
+        </div>
+
+        <div class="action-boxes">
+            <div class="box">
+                <h3>Add Contact</h3>
+                <p>Create a new contact in your address book</p>
+                <button class="action-button add-btn" onclick="window.location.href='addContact.html'">Add Contact</button>
+            </div>
+            <div class="box">
+                <h3>View Contact</h3>
+                <p>View all contacts in your address book and manage them</p>
+                <button class="action-button view-btn" onclick="window.location.href='viewContact.html'">View Contact</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>AddressBook Application © 2024 YourCompanyName. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

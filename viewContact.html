@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Contacts - AddressBook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AddressBook</div>
+        <div class="nav-buttons">
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="window.location.href='addContact.html'">Add Contact</button>
+            <button onclick="window.location.href='viewContact.html'">View Contact</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="welcome-text">
+            <h1>View Contacts</h1>
+            <p>Manage your contacts in one place</p>
+        </div>
+
+        <div class="contact-table-container">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search by name..." onkeyup="searchContacts()">
+            </div>
+
+            <table class="contact-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="contactTableBody">
+                    <!-- Contacts will be dynamically added here -->
+                </tbody>
+            </table>
+            <div class="button-group">
+                <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>AddressBook Application © 2024 YourCompanyName. All rights reserved.</p>
+    </footer>
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
